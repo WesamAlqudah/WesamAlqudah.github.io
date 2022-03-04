@@ -1,3 +1,4 @@
+"use strict";
 // Question 1
 // output : undefined889101
 
