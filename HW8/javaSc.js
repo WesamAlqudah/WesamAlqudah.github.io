@@ -41,3 +41,12 @@ isEmployee();
 
 //Q3
 
+function Person(Name, DateOfBirth){
+this.Name=Name;
+this.DateOfBirth=DateOfBirth;
+this.toString=function(){
+    console.log("Name: "+ this.Name + " DateOfBirth: "+ this.DateOfBirth);
+};
+};
+
+new Person("Johan", "1998-12-10").toString();
