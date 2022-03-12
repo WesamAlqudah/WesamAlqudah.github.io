@@ -7,32 +7,36 @@ export class Patients {
     #LastName=null;
     #DateOfBirth=null;
     #Department=null;
-    #OutPatient=null;
-    constructor(PatientID,FirstName,MiddleInitial,LastName,DateOfBirth,Department,OutPatient){
+    #OutPatientYes=null;
+    #OutPatientNo=null;
+    constructor(PatientID,FirstName,MiddleInitial,LastName,DateOfBirth,Department,OutPatientYes,OutPatientNo){
         this.#PatientID=PatientID;
         this.#FirstName=FirstName;
         this.#MiddleInitial=MiddleInitial;
         this.#LastName=LastName;
         this.#DateOfBirth=DateOfBirth;
         this.#Department=Department;
-        this.#OutPatient=OutPatient;
+        this.#OutPatientYes=OutPatientYes;
+        this.#OutPatientNo=OutPatientNo;
 
     }
-    getPatientID(){return this.#PatientID;}
-    getFirstName(){return this.#FirstName;}
-    getMiddleInitial(){return this.#MiddleInitial;}
-    getLastName(){return this.#LastName;}
-    getDateOfBirth(){return this.#DateOfBirth;}
-    getDepartment(){return this.#Department;}
-    getOutPatient(){return this.#OutPatient;}
+    getPatientID= () =>  this.#PatientID;
+    getFirstName= () => this.#FirstName;
+    getMiddleInitial= () => this.#MiddleInitial;
+    getLastName= () => this.#LastName;
+    getDateOfBirth= () => this.#DateOfBirth;
+    getDepartment= () => this.#Department;
+    getOutPatientYes= () => this.#OutPatientYes;
+    getOutPatientNo= () => this.#OutPatientNo;
 
-    setPatientID(PatientID){this.#PatientID=PatientID;}
-    setFirstName(FirstName){this.#FirstName=FirstName;}
-    setMiddleInitial(MiddleInitial){this.#MiddleInitial=MiddleInitial;}
-    setLastName(LastName){this.#LastName=LastName;}
-    setDateOfBirth(DateOfBirth){this.#DateOfBirth=DateOfBirth;}
-    setDepartment(Department){this.#Department=Department;}
-    setOutPatient(OutPatient){this.#OutPatient=OutPatient;}
+    setPatientID= (PatientID)=>(this.#PatientID=PatientID);
+    setFirstName = (FirstName)=>(this.#FirstName=FirstName);
+    setMiddleInitial=(MiddleInitial)=>(this.#MiddleInitial=MiddleInitial);
+    setLastName=(LastName)=>(this.#LastName=LastName);
+    setDateOfBirth=(DateOfBirth)=>(this.#DateOfBirth=DateOfBirth);
+    setDepartment=(Department)=>(this.#Department=Department);
+    setOutPatientYes=(OutPatientYes)=>(this.#OutPatientYes=OutPatientYes);
+    setOutPatientNo=(OutPatientNo)=>(this.#OutPatientNo=OutPatientNo);
     
-    toString = ()=> `Patient ID No	${this.#PatientID} First Name${this.#FirstName} Middle Initial(s)${this.#MiddleInitial}	Last Name${this.#MiddleInitial}	Date of birth${this.#DateOfBirth}	Department${this.#Department}	Out-patient?${this.#OutPatient}`;
+    toString = ()=>{return  `Patient ID No	${this.getPatientID} First Name${this.#FirstName} Middle Initial(s)${this.#MiddleInitial}	Last Name${this.#MiddleInitial}	Date of birth${this.#DateOfBirth}	Department${this.#Department}	OutPatientYes:${this.#OutPatientYes} OutPatientNo ${this.#OutPatientNo}`;}
 }

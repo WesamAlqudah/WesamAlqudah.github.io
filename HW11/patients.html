@@ -8,8 +8,11 @@
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-bzjLLgZOhgXbSvSc5A9LWWo/mSIYf7U7nFbmYIB2Lgmuiw3vKGJuu+abKoaTx4W6" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main-styles.css">
    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js" integrity="sha256-66f6uQTQkvHF8jpniLWJjnteEfmQaC/tATFew/nTBA8=" crossorigin="anonymous"></script>
+    <script src="./js/Patientsapp.js" type="module" ></script>
 </head>
 <body>
     <header>
@@ -46,7 +49,7 @@
                 Patients Registration
             </h3>
             <hr>
-            <form>
+            <form id="patientForm">
                 <fieldset>
                     <legend></legend>
                     <div class="row">
@@ -145,7 +148,7 @@
                 </div>
             </div>            
             <div style="margin-top: 1em;" id="divPatientsList" style="font-size: 1em">
-                <table class="table table-striped">
+                <table class="table table-striped" id="tablePatients">
                     <thead>
                         <tr>
                             <th scope="col">Patient ID No</th>
@@ -157,7 +160,7 @@
                             <th scope="col">Out-patient?</th>
                         </tr>
                     </thead>
-                    <tbody id="tbodyPatientsList"></tbody>
+                    <tbody></tbody>
                 </table>
             </div>
         </div>
@@ -167,8 +170,8 @@
     <!-- Start footer -->
     <footer>
         <div>
-            <span style="margin-left: 1em;">O. Kalu ::: CS472-WAP</span>
-            <span style="float: right;margin-right: 1em;">HCMC &copy; May 2020</span>
+            <span style="margin-left: 1em;">[Wesam Alqudah] ::: CS472-WAP</span>
+            <span style="float: right;margin-right: 1em;">HCMC &copy; March 2022</span>
         </div>
     </footer>
 </body>
