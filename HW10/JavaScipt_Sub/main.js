@@ -1,7 +1,7 @@
 "use strict";
 
 import {person} from "./Module/person.js";
-import { Employee } from "./Module/Employee.js";
+import { Employee } from "./Module/employee.js";
 
 const Person=[
     new person("Anna Smith",new Date(1998,11,15)),
